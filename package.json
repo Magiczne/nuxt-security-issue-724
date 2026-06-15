@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "issue-724-reproducer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
+    "test": "vitest --ui --api=9999"
+  },
+  "dependencies": {
+    "nuxt": "^4.4.8",
+    "nuxt-security": "2.6.0",
+    "vue": "^3.5.37"
+  },
+  "devDependencies": {
+    "@vitest/ui": "4.1.8",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8",
+    "vitest-environment-nuxt": "^2.0.0",
+    "vue-tsc": "^3.3.4"
+  },
+  "engines": {
+    "node": ">= 24",
+    "yarn": ">= 4.16.0"
+  },
+  "packageManager": "yarn@4.16.0"
+}
